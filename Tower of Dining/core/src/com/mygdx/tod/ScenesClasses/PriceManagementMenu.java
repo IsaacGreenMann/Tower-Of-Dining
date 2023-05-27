@@ -83,6 +83,17 @@ public class PriceManagementMenu extends ScreenAdapter
         render(5);
     }
 
+    public void addFoodToMenu (Food food)
+    {
+        menu.add(food);
+    }
+
+    public void setPriceMenuImg (String filename)
+    {
+        // For setting different layouts for  
+        this.priceMenuImg = new Texture(filename);
+    }
+
     public void render(float delta) 
     {
         ScreenUtils.clear(1, 0, 0, 1);
